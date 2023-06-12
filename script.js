@@ -42,7 +42,7 @@ console.log(form); // check if the form element exists
 if (form) {
   const cityInput = document.querySelector("#city");
 
-  form.addEventListener("submit", (event) => {
+  form.addEventListener("click", (event) => {
     event.preventDefault(); // prevent the page from refreshing
     const city = cityInput.value; // get the value of the input field
     getWeather(city); // use the city value to get the weather data
