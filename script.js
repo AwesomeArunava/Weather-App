@@ -38,13 +38,13 @@ function getWeather(city) {
 }
 
 const form = document.querySelector("#form");
-console.log(form); // check if the form element exists
+// console.log(form); // check if the form element exists
 if (form) {
-  var cityInput = document.querySelector("#city");
+  const cityInput = document.querySelector("#city");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault(); // prevent the page from refreshing
-    var city = cityInput.value; // get the value of the input field
+    const city = cityInput.value; // get the value of the input field
     getWeather(city);// use the city value to get the weather data
   }
   
